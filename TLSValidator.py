@@ -17,9 +17,9 @@ daysToExpiration = (certExpires - datetime.datetime.now()).days
 
 def send_notification(days_to_expire):
     smtp_port = 587
-    smtp_server = "smtp.acmecorp.com"
-    sender_email = "operations@acmecorp.com"
-    receiver_email = "webmaster@acmecorp.com"
+    smtp_server = "STMP server"
+    sender_email = "ayush@gmail.com"
+    receiver_email = "sre@gmail.com"
     password = input("Type your password and press enter: ")
     if days_to_expire == 1:
         days = "1 day"
